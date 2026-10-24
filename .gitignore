@@ -1,3 +1,4 @@
+
 # Python
 __pycache__/
 *.py[cod]
@@ -8,7 +9,7 @@ venv/
 .venv/
 env/
 
-# Secrets
+# Secrets and environment variables
 .env
 .env.*
 !.env.example
@@ -17,13 +18,24 @@ env/
 db.sqlite3
 db.sqlite3-journal
 staticfiles/
+media/
 
 # Testing and coverage
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
 
-# Editors and OS
+# Build artifacts
+build/
+dist/
+
+# Editors and operating system
 .DS_Store
 .idea/
-.vscode/
+
+# VS Code
+# Keep .vscode/launch.json tracked for shared debugging configuration
+.vscode/*
+!.vscode/launch.json
+!.vscode/extensions.json
